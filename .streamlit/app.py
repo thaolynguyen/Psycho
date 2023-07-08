@@ -1,18 +1,18 @@
 import openai
 import streamlit as st
-
-
-
 import os
 
+
+
+# Setting page title and header
+st.set_page_config(page_title="Psychokwak", page_icon=":robot_face:")
 st.write(
     "Has environment variables been set:",
     os.environ["openai_key"] == st.secrets["openai_key"],
 )
 
 
-# Setting page title and header
-st.set_page_config(page_title="Psychokwak", page_icon=":robot_face:")
+
 
 #with st.sidebar:
  #   openai_key = st.text_input(label='Clé API', type = 'password')
